@@ -1,0 +1,8 @@
+
+.nav {
+    border: 3px solid red;
+    border-color: red;
+    display: flex;
+    justify-content: flex-end;
+  
+}
