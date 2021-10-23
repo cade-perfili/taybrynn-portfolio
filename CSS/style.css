@@ -1,8 +1,23 @@
 
 .nav {
+    list-style-type: none;
     border: 3px solid red;
     border-color: red;
     display: flex;
     justify-content: flex-end;
-  
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    list-style-type: none;
+    /*border: 3px solid red;*/
+    border-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 20px;
 }
