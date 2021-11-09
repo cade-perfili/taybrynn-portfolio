@@ -21,3 +21,9 @@
     flex-wrap: wrap;
     margin-right: 20px;
 }
+
+.keyworks-slideshow img{
+    display: flex;
+    width: 50%;
+    height: auto;
+}
