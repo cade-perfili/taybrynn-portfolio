@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&display=swap"
         rel="stylesheet">
-    <script src="JS/script.js"></script>
+
     <script src="https://use.fontawesome.com/cb60542ef1.js"></script>
 </head>
 
@@ -28,11 +28,12 @@
             <i class="fa fa-bars"></i> </a>
     </div>
     <!--Title-->
-    <h1>Taylor Bryn's Photography</h1>
+
     <!--Hero Image-->
     <div class="hero-container">
         <div class="hero-text">
-            <h2>See what I do</h2>
+            <h1>Taylor Byrn's photography</h1>
+            <p>See what I can do!</p>
         </div>
     </div>
     <!--About/Artist Statement-->
@@ -50,94 +51,118 @@
     <h2>BFA Show</h2>
     <div class="bfa-container">
         <div class="bfa-slideshow">
-            <div class="bfa-slideshow">1 / 7</div>
+            <div class="slideshow-number">1 / 7</div>
             <img src="IMG/20171109_134230.jpg" alt="Orange mold of ear with sunset background">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="bfa-slideshow-text">Untitled</div>
         </div>
         <div class="bfa-slideshow">
-            <div class="bfa-slideshow">2 / 7</div>
+            <div class="slideshow-number">2 / 7</div>
             <img src="IMG/20171109_134240.jpg" alt="Picture of cake burning on T.V">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="bfa-slideshow-text">Untitled</div>
         </div>
         <div class="bfa-slideshow">
-            <div class="bfa-slideshow">3 / 7</div>
+            <div class="slideshow-number">3 / 7</div>
             <img src="IMG/20171109_134259.jpg" alt="Pink picutres next to drawer">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="bfa-slideshow-text">Untitled</div>
         </div>
         <div class="bfa-slideshow">
-            <div class="bfa-slideshow">4 / 7</div>
+            <div class="slideshow-number">4 / 7</div>
             <img src="IMG/20171112_130137.jpg" alt="Same picture shown at different angle">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="bfa-slideshow-text">Untitled</div>
         </div>
         <div class="bfa-slideshow">
-            <div class="bfa-slideshow">5 / 7</div>
+            <div class="slideshow-number">5 / 7</div>
             <img src="IMG/20171109_134343.jpg" alt="Shot of art gallery showing different pictures">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="bfa-slideshow-text">Untitled</div>
         </div>
         <div class="bfa-slideshow">
-            <div class="bfa-slideshow">6 / 7</div>
+            <div class="slideshow-number">6 / 7</div>
             <img src="IMG/BFA-FILM_Together.jpg" alt="blurry picture of hands and legs">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="bfa-slideshow-text">Untitled</div>
         </div>
         <div class="bfa-slideshow">
-            <div class="bfa-slideshow">7 / 7</div>
+            <div class="slideshow-number">7 / 7</div>
             <img src="IMG/BFA.png" alt="Picture of olderwoman and child">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="bfa-slideshow-text">Untitled</div>
         </div>
         <!--Buttons for Slideshow-->
         <div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <!--Dots/Circle for selecting Pictures (bfa)-->
+        <div>
+            <span class="dot-bfa" onclick="currentSlide(1)"></span>
+            <span class="dot-bfa" onclick="currentSlide(2)"></span>
+            <span class="dot-bfa" onclick="currentSlide(3)"></span>
+            <span class="dot-bfa" onclick="currentSlide(4)"></span>
+            <span class="dot-bfa" onclick="currentSlide(5)"></span>
+            <span class="dot-bfa" onclick="currentSlide(6)"></span>
+            <span class="dot-bfa" onclick="currentSlide(7)"></span>
         </div>
     </div>
     <!--Otherworks Slide-show-->
     <h2>Other Works</h2>
     <div class="personal-container">
         <div class="personal-slideshow">
-            <div class="personal-slideshow">1 / 4</div>
+            <div class="slideshow-number">1 / 7</div>
             <img src="IMG/DIGITAL_The Pieces Left.jpg" alt="Pictures of dirtly laundry">
             <div class="personal-slideshow-text">The Pieces Left</div>
         </div>
 
         <div class="personal-slideshow">
-            <div class="personal-slideshow">2 / 4</div>
+            <div class="slideshow-number">2 / 7</div>
             <img src="IMG/DIGITAL_Untitled.jpg" alt="blank poloriod on flower background">
             <div class="personal-slideshow-text">Untitled</div>
         </div>
 
         <div class="personal-slideshow">
-            <div class="personal-slideshow">3 / 4</div>
+            <div class="slideshow-number">3 / 7</div>
             <img src="IMG/FILM_Sunday Light.jpg" alt="Picture of trees and a tralier">
             <div class="personal-slideshow-text">Sunday Light</div>
         </div>
 
         <div class="personal-slideshow">
-            <div class="personal-slideshow">4 / 4</div>
+            <div class="slideshow-number">4 / 7</div>
             <img src="IMG/FILM_Untitled.jpg" alt="Man looking in mirror, green overlay">
             <div class="personal-slideshow-text">Untitled</div>
         </div>
         <div class="personal-slideshow">
-            <div class="personal-slideshow">1 / 4</div>
+            <div class="slideshow-number">5 / 7</div>
             <img src="img/DIGITAL_Find Me.jpg" alt="Two pictures combined as one, a postcard taped to fence
         and an envelope tucked under a rug">
             <div class="keyworks-slideshow-text">Find Me</div>
         </div>
-        <div class="keyworks-slideshow">
-            <div class="keyworks-slideshow">3 / 4</div>
+        <div class="personal-slideshow">
+            <div class="slideshow-number">6 / 7</div>
             <img src="IMG/FILM_Joe Joe and the Beanstock.jpg" alt="Older man holding beans in a basket, wearing
         KFC shirt, picture is from the chest down." alt="Grave-site with a grave in the middle of what a appears
         to be a couple. Perry and Mildred McDonald">
-            <div class="keyworks-slideshow-text">Joe Joe and the Beanstock</div>
+            <div class="personal-slideshow-text">Joe Joe and the Beanstock</div>
         </div>
-        <div class="keyworks-slideshow">
-            <div class="keyworks-slideshow">4 / 4</div>
+        <div class="personal-slideshow">
+            <div class="slideshow-number">7 / 7</div>
             <img src="IMG/FILM_Untitled(1).jpg">
-            <div class="keyworks-slideshow-text">Untitled</div>
+            <div class="personal-slideshow-text">Untitled</div>
         </div>
+        <!--Buttons for Otherworks Slideshow-->
         <div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
         </div>
+
+        <!--Dots/Circle for selecting Pictures (otherworks)-->
+        <div>
+            <span class="dot-other" onclick="currentSlide(1)"></span>
+            <span class="dot-other" onclick="currentSlide(2)"></span>
+            <span class="dot-other" onclick="currentSlide(3)"></span>
+            <span class="dot-other" onclick="currentSlide(4)"></span>
+            <span class="dot-other" onclick="currentSlide(5)"></span>
+            <span class="dot-other" onclick="currentSlide(6)"></span>
+            <span class="dot-other" onclick="currentSlide(7)"></span>
+        </div>
+    </div>
     </div>
 
     <!--Contact Form-->
@@ -186,6 +211,8 @@
         <p>Website by Cade perfili</p>
         <p class="social-media">Facebook Instagram Pinterest</p>
     </footer>
+
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
