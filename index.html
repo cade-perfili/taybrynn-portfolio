@@ -7,87 +7,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tay Bryn</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="JS/script.js"></script>
+    <script src="https://use.fontawesome.com/cb60542ef1.js"></script>
 </head>
 
 <body>
     <!--Nav listing-->
-    <div class="nav">
-        <ul class="nav-list">
-            <li>Home</li>
-            <li>About</li>
-            <li>Shows</li>
-            <li>Contact</li>
-            <li>About</li>
-        </ul>
+    <div class="nav responsive" id="RespNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#shows">BFA Show</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i> </a>
     </div>
     <!--Title-->
     <h1>Taylor Bryn's Photography</h1>
-    <!--Key Works SlideShow-->
-<h2>Keyworks</h2>
-<div class="keyworks-container">
-    <div class="keyworks-slideshow">
-        <div class="keyworks-slideshow">1 / 4</div>
-        <img src="img/DIGITAL_Find Me.jpg" alt="Two pictures combined as one, a postcard taped to fence
-        and an envelope tucked under a rug">
-        <div class="keyworks-slideshow-text">Find Me</div>
+    <!--Hero Image-->
+    <div class="hero-container">
+        <div class="hero-text">
+            <h2>See what I do</h2>
+        </div>
     </div>
-
-
-    <div class="keyworks-slideshow">
-        <div class="keyworks-slideshow">2 / 4</div>
-        <img src="IMG/FILM_Apart.jpg" alt="A picture of different pictures, one in focus, others that
-        are blurry">
-        <div class="keyworks-slideshow-text">Apart</div>
-    </div>
-
-    <div class="keyworks-slideshow">
-        <div class="keyworks-slideshow">3 / 4</div>
-        <img src="IMG/FILM_Joe Joe and the Beanstock.jpg" alt="Older man holding beans in a basket, wearing
-        KFC shirt, picture is from the chest down." alt="Grave-site with a grave in the middle of what a appears
-        to be a couple. Perry and Mildred McDonald">
-        <div class="keyworks-slideshow-text">Joe Joe and the Beanstock</div>
-    </div>
-
-    <div class="keyworks-slideshow">
-        <div class="keyworks-slideshow">4 / 4</div>
-        <img src="IMG/FILM_Untitled(1).jpg">
-        <div class="keyworks-slideshow-text">Untitled</div>
-    </div>
-
-    <!--Buttons for Keyworks-->
-    <div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <!--slide-selector-->
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-</div>
-
-<!--About/Artist Statement-->
+    <!--About/Artist Statement-->
     <div class="About">
         <h2>Whomst is Tay Bryn?</h2>
-            <p>Hey, I'm Taylor Bryn, and this is where my photography lives. Take a moment to consider
-                this work, and take a peek at my resume to see how all my young adult life and been 
-                devoted to the art world (and trying to pay rent). If what I do seems like it would fit
-                an upcoming project or exhibit please reach out, I'm sure we can make something brightens
-                up our dark world. 
-            </p>
+        <p>Hey, I'm Taylor Bryn, and this is where my photography lives. Take a moment to consider
+            this work, and take a peek at my resume to see how all my young adult life and been
+            devoted to the art world (and trying to pay rent). If what I do seems like it would fit
+            an upcoming project or exhibit please reach out, I'm sure we can make something brightens
+            up our dark world.
+        </p>
 
     </div>
-<!--BFA Slideshow-->
-<h2>BFA Show</h2>
-<div class="bfa-container">
-    <div class="bfa-slideshow">
-        <div class="bfa-slideshow">1 / 7</div>
-        <img src="IMG/20171109_134230.jpg" alt="Orange mold of ear with sunset background">
-        <div class="keyworks-slideshow-text">Untitled</div>
+    <!--BFA Slideshow-->
+    <h2>BFA Show</h2>
+    <div class="bfa-container">
+        <div class="bfa-slideshow">
+            <div class="bfa-slideshow">1 / 7</div>
+            <img src="IMG/20171109_134230.jpg" alt="Orange mold of ear with sunset background">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <div class="bfa-slideshow">
+            <div class="bfa-slideshow">2 / 7</div>
+            <img src="IMG/20171109_134240.jpg" alt="Picture of cake burning on T.V">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <div class="bfa-slideshow">
+            <div class="bfa-slideshow">3 / 7</div>
+            <img src="IMG/20171109_134259.jpg" alt="Pink picutres next to drawer">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <div class="bfa-slideshow">
+            <div class="bfa-slideshow">4 / 7</div>
+            <img src="IMG/20171112_130137.jpg" alt="Same picture shown at different angle">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <div class="bfa-slideshow">
+            <div class="bfa-slideshow">5 / 7</div>
+            <img src="IMG/20171109_134343.jpg" alt="Shot of art gallery showing different pictures">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <div class="bfa-slideshow">
+            <div class="bfa-slideshow">6 / 7</div>
+            <img src="IMG/BFA-FILM_Together.jpg" alt="blurry picture of hands and legs">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <div class="bfa-slideshow">
+            <div class="bfa-slideshow">7 / 7</div>
+            <img src="IMG/BFA.png" alt="Picture of olderwoman and child">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <!--Buttons for Slideshow-->
+        <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </div>
-</div>
+    <!--Otherworks Slide-show-->
+    <h2>Other Works</h2>
+    <div class="personal-container">
+        <div class="personal-slideshow">
+            <div class="personal-slideshow">1 / 4</div>
+            <img src="IMG/DIGITAL_The Pieces Left.jpg" alt="Pictures of dirtly laundry">
+            <div class="personal-slideshow-text">The Pieces Left</div>
+        </div>
+
+        <div class="personal-slideshow">
+            <div class="personal-slideshow">2 / 4</div>
+            <img src="IMG/DIGITAL_Untitled.jpg" alt="blank poloriod on flower background">
+            <div class="personal-slideshow-text">Untitled</div>
+        </div>
+
+        <div class="personal-slideshow">
+            <div class="personal-slideshow">3 / 4</div>
+            <img src="IMG/FILM_Sunday Light.jpg" alt="Picture of trees and a tralier">
+            <div class="personal-slideshow-text">Sunday Light</div>
+        </div>
+
+        <div class="personal-slideshow">
+            <div class="personal-slideshow">4 / 4</div>
+            <img src="IMG/FILM_Untitled.jpg" alt="Man looking in mirror, green overlay">
+            <div class="personal-slideshow-text">Untitled</div>
+        </div>
+        <div class="personal-slideshow">
+            <div class="personal-slideshow">1 / 4</div>
+            <img src="img/DIGITAL_Find Me.jpg" alt="Two pictures combined as one, a postcard taped to fence
+        and an envelope tucked under a rug">
+            <div class="keyworks-slideshow-text">Find Me</div>
+        </div>
+        <div class="keyworks-slideshow">
+            <div class="keyworks-slideshow">3 / 4</div>
+            <img src="IMG/FILM_Joe Joe and the Beanstock.jpg" alt="Older man holding beans in a basket, wearing
+        KFC shirt, picture is from the chest down." alt="Grave-site with a grave in the middle of what a appears
+        to be a couple. Perry and Mildred McDonald">
+            <div class="keyworks-slideshow-text">Joe Joe and the Beanstock</div>
+        </div>
+        <div class="keyworks-slideshow">
+            <div class="keyworks-slideshow">4 / 4</div>
+            <img src="IMG/FILM_Untitled(1).jpg">
+            <div class="keyworks-slideshow-text">Untitled</div>
+        </div>
+        <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!--Contact Form-->
+    <h3>Wanna work on something together? Let me know!</h3>
+    <div class="contact-container">
+        <section class="contact-wrap">
+            <form action="" class="contact-form">
+                <div class="col-sm-6">
+                    <div class="input-block">
+                        <label for="">First Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-block">
+                        <label for="">Last Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input-block">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input-block">
+                        <label for="">Phone Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input-block textarea">
+                        <label for="">Tell me about your Project</label>
+                        <textarea rows="3" type="text" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <button class="square-button">Send</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p>Website by Cade perfili</p>
+        <p class="social-media">Facebook Instagram Pinterest</p>
+    </footer>
 </body>
 
 </html>

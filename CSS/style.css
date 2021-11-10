@@ -1,26 +1,74 @@
+body {
+    background-color:#add8e6;
+    font-family: 'Open Sans Condensed, Sans';
+    font-size: medium;
+}
 
 .nav {
     list-style-type: none;
-    border: 3px solid red;
-    border-color: red;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: gray;
+    overflow: hidden;
+    text-decoration: none;
 }
 
-.nav-list {
-    list-style-type: none;
-    /*border: 3px solid red;*/
-    border-color: red;
+i {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 20px;
 }
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.nav a:not(:first-child) {
+    display: none;
+}
+
+  .nav a:hover {
+      background-color: orange;
+      color: white;
+  }
+
+  .nav a.icon{
+      float: right;
+      display: block;
+  }
+
+  .nav.responsive {
+      position: relative;
+    }
+
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico';
+}
+
 
 .keyworks-slideshow img{
     display: flex;
@@ -30,6 +78,12 @@
 
 .bfa-slideshow img{
     display: flex;
-    width: 50%;
+    width: 25%;
+    height: auto;
+}
+
+.personal-slideshow img{
+    display: flex;
+    width: 25%;
     height: auto;
 }
