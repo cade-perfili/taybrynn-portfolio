@@ -18,6 +18,7 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+
 //Responsive Nav JS
 function myFunction() {
   var x = document.getElementById("RespNav");
