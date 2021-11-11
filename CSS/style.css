@@ -6,7 +6,6 @@ body, html {
 }
 
 .nav {
-    list-style-type: none;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -19,8 +18,8 @@ body, html {
 
 i {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .nav a {
@@ -51,7 +50,7 @@ i {
       position: relative;
     }
 
-  .nav.responsive .icon {
+  .nav .responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -95,13 +94,21 @@ h2 {
     
 }
 
+.bfa-container1{
+    max-width: 500px;
+    position: relative;
+    margin: 25px auto 1000px;
+    max-height: 500px;
+}
+
 .bfa-container, .personal-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    max-height: 1000px;
     margin-bottom: 25px;
 }
+
+
 
 .personal-slideshow, .bfa-slideshow{
 display: none;
@@ -111,8 +118,8 @@ display: none;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: auto;
-    max-height: 1000px;
+    height: 100%;
+    
 }
 
 .personal-slideshow img{
