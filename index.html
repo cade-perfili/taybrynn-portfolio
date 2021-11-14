@@ -51,10 +51,16 @@
 
     </div>
     <!--BFA Slideshow-->
-    <h2>BFA Show</h2>
+    
+    <div class="align">
+        
+        
     <div class="bfa-container1">
+        
         <div class="bfa-container">
+            <h2 class="slideshow-title">BFA Show</h2>
             <div class="bfa-slideshow">
+                
                 <div class="slideshow-number">1 / 7</div>
                 <img src="IMG/20171109_134230.jpg" alt="Orange mold of ear with sunset background">
                 <div class="bfa-slideshow-text">Untitled</div>
@@ -89,85 +95,74 @@
                 <img src="IMG/BFA.png" alt="Picture of olderwoman and child">
                 <div class="bfa-slideshow-text">Untitled</div>
             </div>
-            <!--Buttons for Slideshow-->
-            <div>
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-            </div>
+                    <!--Buttons for Slideshow-->
+                    <div>
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>
 
-            <!--Dots/Circle for selecting Pictures (bfa)-->
-            <div>
-                <span class="dot-bfa" onclick="currentSlide(1)"></span>
-                <span class="dot-bfa" onclick="currentSlide(2)"></span>
-                <span class="dot-bfa" onclick="currentSlide(3)"></span>
-                <span class="dot-bfa" onclick="currentSlide(4)"></span>
-                <span class="dot-bfa" onclick="currentSlide(5)"></span>
-                <span class="dot-bfa" onclick="currentSlide(6)"></span>
-                <span class="dot-bfa" onclick="currentSlide(7)"></span>
-            </div>
         </div>
+
     </div>
     <!--Otherworks Slide-show-->
-    <h2>Other Works</h2>
+    
+    <div class="personal-container1">
+        
     <div class="personal-container">
+        <h2>Other Works</h2>
         <div class="personal-slideshow">
             <div class="slideshow-number">1 / 6</div>
-            <img src="IMG/DIGITAL_The Pieces Left.jpg" alt="Pictures of dirtly laundry">
+            <img src="IMG/DIGITAL_The Pieces Left.jpg" id="personal-img" alt="Pictures of dirtly laundry"
+             onclick="enlargeImg()"/>
             <div class="personal-slideshow-text">The Pieces Left</div>
         </div>
 
         <div class="personal-slideshow">
             <div class="slideshow-number">2 / 6</div>
-            <img src="IMG/DIGITAL_Untitled.jpg" alt="blank poloriod on flower background">
+            <img src="IMG/DIGITAL_Untitled.jpg" class="personal-img" alt="blank poloriod on flower background">
             <div class="personal-slideshow-text">Untitled</div>
         </div>
 
         <div class="personal-slideshow">
             <div class="slideshow-number">3 / 6</div>
-            <img src="IMG/FILM_Sunday Light.jpg" alt="Picture of trees and a tralier">
+            <img src="IMG/FILM_Sunday Light.jpg" class="personal-img" alt="Picture of trees and a tralier">
             <div class="personal-slideshow-text">Sunday Light</div>
         </div>
 
         <div class="personal-slideshow">
             <div class="slideshow-number">4 / 6</div>
-            <img src="IMG/FILM_Untitled.jpg" alt="Man looking in mirror, green overlay">
+            <img src="IMG/FILM_Untitled.jpg" class="personal-img" alt="Man looking in mirror, green overlay">
             <div class="personal-slideshow-text">Untitled</div>
         </div>
 
         <div class="personal-slideshow">
             <div class="slideshow-number">5 / 6</div>
             <img src="IMG/FILM_Joe Joe and the Beanstock.jpg" alt="Older man holding beans in a basket, wearing
-        KFC shirt, picture is from the chest down." alt="Grave-site with a grave in the middle of what a appears
-        to be a couple. Perry and Mildred McDonald">
+        KFC shirt, picture is from the chest down.">
             <div class="personal-slideshow-text">Joe Joe and the Beanstock</div>
         </div>
         <div class="personal-slideshow">
             <div class="slideshow-number">6 / 6</div>
-            <img src="IMG/FILM_Untitled(1).jpg">
+            <img src="IMG/FILM_Untitled(1).jpg" class="personal-img" alt="Grave-site with a grave in the middle of what a appears
+            to be a couple. Perry and Mildred McDonald">
             <div class="personal-slideshow-text">Untitled</div>
         </div>
-        <!--Buttons for Otherworks Slideshow-->
-        <div>
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-        </div>
+                <!--Buttons for Otherworks Slideshow-->
+                <div>
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
 
-        <!--Dots/Circle for selecting Pictures (otherworks)-->
-        <div>
-            <span class="dot-other" onclick="currentSlide(1)"></span>
-            <span class="dot-other" onclick="currentSlide(2)"></span>
-            <span class="dot-other" onclick="currentSlide(3)"></span>
-            <span class="dot-other" onclick="currentSlide(4)"></span>
-            <span class="dot-other" onclick="currentSlide(5)"></span>
-            <span class="dot-other" onclick="currentSlide(6)"></span>
-            <span class="dot-other" onclick="currentSlide(7)"></span>
-        </div>
-    </div>
+
     </div>
 
+    </div>
+
+    </div>
+</div>
     <!--Contact Form-->
     <h3>Wanna work on something together? Let me know!</h3>
-    <div class="contact-container">
+    <div id="contact" class="contact-container">
         <section class="contact-wrap">
             <form action="" class="contact-form">
                 <div class="First Name">

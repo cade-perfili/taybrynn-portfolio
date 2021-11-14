@@ -19,6 +19,14 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 
+
+img = document.getElementsByID("personal-img");
+function enlargeImg() {
+    img.style.width = "60%";
+    img.style.height = "auto";
+    img.style.transition = "width 0.5s ease";
+}
+
 //Responsive Nav JS
 function myFunction() {
   var x = document.getElementById("RespNav");

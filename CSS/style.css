@@ -84,6 +84,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: none;
 }
 
 .hero-text {
@@ -94,12 +95,18 @@ h2 {
     
 }
 
-.bfa-container1 {
+.bfa-container1, .personal-container1 {
+display: flex;
+flex-direction: row;
 position: relative;
 margin: auto;
 border: 5px solid ;
-
+background-color: whitesmoke;
+width: 75%;
+margin-bottom: 25px;
 }
+
+
 
 
 .bfa-container, .personal-container {
@@ -107,11 +114,9 @@ border: 5px solid ;
     position: relative;
     margin: auto;
     margin-bottom: 25px;
+    
 }
 
-.personal-container {
-    margin-top: 500px;
-}
 
 
 
@@ -123,9 +128,11 @@ display: none;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    max-height: 100%;
+    height: auto;
+    max-height: 1000px;
+    min-height: auto;
     margin: 0;
+    flex-direction: row;
 }
 
 .personal-slideshow img{
@@ -180,7 +187,7 @@ display: none;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color(black) 0.6s ease;
   }
 
   .active, .dot-bfa:hover, .dot-other:hover {
@@ -216,6 +223,16 @@ input, textarea{
 
     .icon-container {
         display: none;
+    }
+
+    .align {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slidshow-title {
+        display: flex;
+        justify-content: space-between;
     }
 
 }
