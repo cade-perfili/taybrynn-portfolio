@@ -165,9 +165,6 @@ display: none;
     border-radius: 3px 0 0 3px;
   }
 
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
 
 .bfa-slideshow-text, .personal-slideshow-text {
     color: yellow;
@@ -230,10 +227,34 @@ input, textarea{
         flex-direction: row;
     }
 
+    .bfa-container1, .personal-container1 {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin: auto;
+        border: 5px solid ;
+        background-color: whitesmoke;
+        width: 50%;
+        margin-right: 50px;
+        }
+        
+
     .slidshow-title {
         display: flex;
         justify-content: space-between;
     }
+
+    .personal-slideshow img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
 
 }
 
