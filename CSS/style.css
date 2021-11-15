@@ -1,5 +1,5 @@
 body, html {
-    background-color:#add8e6;
+    background-color:whitesmoke;
     font-family: 'Open Sans Condensed, Sans';
     font-size: medium;
     height: 100%;
@@ -11,7 +11,8 @@ body, html {
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: gray;
+    background-color: blue;
+    opacity: 0.5;
     overflow: hidden;
     text-decoration: none;
 }
@@ -95,21 +96,27 @@ h2 {
     
 }
 
+.bfa-container1 {
+    background-color: aquamarine;
+}
+
 .bfa-container1, .personal-container1 {
+background-color: aquamarine;
 display: flex;
 flex-direction: row;
 position: relative;
 margin: auto;
 border: 5px solid ;
-background-color: whitesmoke;
 width: 75%;
 margin-bottom: 25px;
+background-color: aquamarine;
 }
 
 
 
 
 .bfa-container, .personal-container {
+    background-color: aquamarine;
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -125,6 +132,7 @@ display: none;
 }
 
 .bfa-slideshow img{
+    background-color: aquamarine;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -166,6 +174,7 @@ display: none;
   }
 
 
+
 .bfa-slideshow-text, .personal-slideshow-text {
     color: yellow;
     font-size: 16px;
@@ -197,16 +206,55 @@ display: none;
   }
 
 .contact-container {
+    background-color: crimson;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     border: 1px solid ;
+    width: 100%;
+} 
+
+h3 {
+    text-align: center;
+    font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
+    font-size: 24px;
 }
 
-input, textarea{
-    margin-left: 20px;
+label {
+    width: 100%;
+    margin-left:20px;
     display: flex;
-    align-items: left;
+    align-items: center;
+    min-width: 700px;
 }
+
+
+
+.contact-wrap {
+    width: 100%;
+}
+input[type=text] .input-block {
+    width: 100%;
+    
+}
+
+textarea{
+    
+    display: flex;
+    
+
+    text-align: center;
+}
+.contact-form{
+    width: 100%;
+}
+
+.square-button {
+    text-align: center;
+}
+
+
+
 
 @media screen and (min-width: 1000px) {
     .nav {
@@ -233,7 +281,7 @@ input, textarea{
         position: relative;
         margin: auto;
         border: 5px solid ;
-        background-color: whitesmoke;
+        background-color: aquamarine;
         width: 50%;
         margin-right: 50px;
         }
@@ -255,6 +303,12 @@ input, textarea{
     .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
       }
+
+    .contact-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
 
 }
 
