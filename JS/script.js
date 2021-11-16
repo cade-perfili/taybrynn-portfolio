@@ -33,15 +33,18 @@ function myFunction() {
 } 
 
 //Contact Form Verification 
-function validateName() {
-
-  var name = document.getElementsById('First-Name').value;
-
-  if(name.length == 0) {
-
-    producePrompt('Name is required', 'name-error' , 'red')
+function validateForm() {
+  let fname = document.forms["myForm"]["fname"].value;
+  if (fname == "") {
+    alert("Name must be filled out");
     return false;
   }
-  console.log(name) 
-}
+
+  let email = document.forms["myForm"]["email"].value;
+  if (email == "") {
+    alert("email must be filled out");
+    return false;
+  }
+} 
+
 

@@ -165,13 +165,12 @@
     <h3>Wanna work on something together? Let me know!</h3>
     <div id="contact" class="contact-container">
 
-        <form action="" class="contact-form">
-            <div class="First-Name">
-                <div class="input-block">
+        <form name="myForm" class="contact-form" onsubmit="return validateForm()" method="post" >
+            
                     <label for="">First Name:</label>
-                    <input type="text" class="form-control" id="First-Name" name="name" onkeyup="validateName()">
-                </div>
-            </div>
+                    <input type="text" class="form-control" name="fname">
+                
+           
             <div class="Last-Name">
                 <div class="input-block">
                     <label for="">Last Name:</label>
@@ -181,7 +180,7 @@
             <div class="Email">
                 <div class="input-block">
                     <label for="">Email:</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="email">
                 </div>
             </div>
             <div class="Phone-Number">
@@ -196,8 +195,8 @@
                     <textarea rows="3" type="text" class="form-control"></textarea>
                 </div>
             </div>
-            <div class="send-button">
-                <button class="square-button">Send</button>
+            <div class="square-button">
+                <button class="square-button" type="submit">Submit Project Request</button>
             </div>
 
         </form>
