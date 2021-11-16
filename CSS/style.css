@@ -12,9 +12,10 @@ body, html {
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: blue;
-    opacity: 0.5;
+    opacity: 0.7;
     overflow: hidden;
     text-decoration: none;
+    z-index: 9;
 }
 
 i {
@@ -216,7 +217,7 @@ h3 {
 }
 
 .contact-form{
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
@@ -270,6 +271,8 @@ text-align: end;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        z-index: 9;
+        width: 100%;
     }
     .nav a {
         display: inline;
@@ -332,6 +335,10 @@ text-align: end;
             text-align: center;
             margin-right: 5px;
         }
+
+    .contact-form {
+        width: 50%;
+    }
 
 }
 
