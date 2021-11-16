@@ -5,7 +5,7 @@ This is a no frills basic photography portfolio landing page. The website is not
 CSS Features: 
 -Responsive Nav Menu
 -Flexbox
--.nth Child (used in Tablet Media Quiery)
+-.nth Child (used in Tablet Media Queriy)
 
 JavaScript Features:
 -Slide Show (Hides pictures until an arrow is clicked to select them)
