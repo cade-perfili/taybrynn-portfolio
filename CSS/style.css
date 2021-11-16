@@ -4,7 +4,7 @@ body, html {
     font-size: medium;
     height: 100%;
 }
-
+/*Nav and responsive Nav Css*/
 .nav {
     display: flex;
     justify-content: flex-start;
@@ -64,7 +64,7 @@ i {
   }
 
 
-
+/*Style for headers*/
 h1 {
     text-align: center;
     font-family: 'Pacifico';
@@ -76,7 +76,7 @@ h2 {
     font-size: 30px;
 }
 
-
+/*Hero Img Styling*/
 .hero-container {
     background-image: linear-gradient(rgba(1, 1, 1, 0.205), rgba(0, 0, 0, 0.205)), url('../IMG/FILM_Apart.jpg');
     height: 35%;
@@ -95,7 +95,7 @@ h2 {
     left: 50%;
     
 }
-
+/* Slide Show Styling*/
 .bfa-container1 {
     background-color: aquamarine;
 }
@@ -109,7 +109,7 @@ margin: auto;
 border: 5px solid ;
 width: 75%;
 margin-bottom: 25px;
-background-color: aquamarine;
+;
 }
 
 
@@ -150,7 +150,7 @@ display: none;
     height: auto;
     max-height: 1000px;
 }
-
+/*Style for previous and next buttons*/
 .prev, .next {
     display: flex;
     justify-content: space-between;
@@ -185,28 +185,11 @@ display: none;
     text-align: center;
 }
 
-.dot-bfa, .dot-other {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color(black) 0.6s ease;
-  }
 
-  .active, .dot-bfa:hover, .dot-other:hover {
-    background-color: #717171;
-  }
-
-  footer {
-      display: flex;
-      flex-direction: row;
-  }
+ /*Contact Form Styles*/
 
 .contact-container {
-    background-color: crimson;
+    background-color: #ff7f50;
     opacity: 0.8;
     display: flex;
     justify-content: center;
@@ -220,42 +203,64 @@ h3 {
     font-size: 24px;
 }
 
-label {
-    width: 100%;
-    margin-left:20px;
+
+.contact-container {
     display: flex;
-    align-items: center;
-    min-width: 700px;
-}
-
-
-
-.contact-wrap {
+    justify-content: center;
     width: 100%;
-}
-input[type=text] .input-block {
-    width: 100%;
-    
+    height: auto;
 }
 
-textarea{
-    
-    display: flex;
-    
-
-    text-align: center;
-}
 .contact-form{
     width: 100%;
+    height: 100%;
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
 }
 
 .square-button {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
     text-align: center;
+    margin-right: 5px;
+}
+
+.form-control {
+display: flex;
+justify-content: center;
+width: 50%;
+margin: 5px 5px 5px 3px;
+}
+/* End of Contact form styles, Begging of footer styles*/
+
+footer {
+    background-color: blue;
+    opacity: 0.5;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
 }
 
 
 
+.social-media {
+margin-top: 15px;
+margin-left: 15px;
+text-align: end;
+}
 
+
+
+/*Desktops*/
 @media screen and (min-width: 1000px) {
     .nav {
         display: flex;
@@ -301,7 +306,7 @@ textarea{
     }
 
     .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(255, 131, 100, 0.534);
       }
 
     .contact-container {
@@ -310,10 +315,48 @@ textarea{
         flex-direction: row;
     }
 
+    .form-control {
+        display: flex;
+        justify-content: center;
+        width: 97.8%;
+        margin: 5px 5px 5px 3px;
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-right: 5px;
+        }
+
 }
 
-@media screen and (max-height: 600px) {
-    * {
-        max-width: 100%;
+@media screen and (min-width:768px){
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+.nav a:nth-child(2) {
+    display: inline;
+}
+
+    .contact-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
     }
+
+    .form-control {
+        display: flex;
+        justify-content: center;
+        width: 97.8%;
+        margin: 5px 5px 5px 3px;
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-right: 5px;
+        }
 }

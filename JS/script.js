@@ -18,14 +18,9 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+//End of SlideShow JS
 
 
-img = document.getElementsByID("personal-img");
-function enlargeImg() {
-    img.style.width = "60%";
-    img.style.height = "auto";
-    img.style.transition = "width 0.5s ease";
-}
 
 //Responsive Nav JS
 function myFunction() {
@@ -36,4 +31,17 @@ function myFunction() {
    x.className = "nav";
   }
 } 
+
+//Contact Form Verification 
+function validateName() {
+
+  var name = document.getElementsById('First-Name').value;
+
+  if(name.length == 0) {
+
+    producePrompt('Name is required', 'name-error' , 'red')
+    return false;
+  }
+  console.log(name) 
+}
 
