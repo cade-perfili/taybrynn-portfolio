@@ -101,8 +101,11 @@ h1 {
 p {
     font-family: 'hahmlet', 'Courier New', Courier, monospace;
     font-size: larger;
+    text-align: center;
 }
 /* Slide Show Styling*/
+
+
 .bfa-container1 {
     background-color: aquamarine;
 }
@@ -111,12 +114,13 @@ p {
 background-color: aquamarine;
 display: flex;
 flex-direction: row;
+justify-content: center;
 position: relative;
 margin: auto;
 border: 5px solid ;
 width: 75%;
 margin-bottom: 25px;
-;
+text-align: center;
 }
 
 
@@ -128,13 +132,9 @@ margin-bottom: 25px;
     position: relative;
     margin: auto;
     margin-bottom: 25px;
-    
+    text-align: center;
 }
 
-.Otherworks-title {
-    display: flex;
-    justify-content: flex-end;
-}
 
 
 .personal-slideshow, .bfa-slideshow{
@@ -155,7 +155,7 @@ display: none;
 
 .bfa-title {
     display: flex;
-    justify-content: start;
+    justify-content: center;
 }
 
 .personal-slideshow img{
@@ -191,7 +191,7 @@ display: none;
 
 
 .bfa-slideshow-text, .personal-slideshow-text {
-    color: yellow;
+    color: orange;
     font-size: 16px;
     padding: 8px 12px;
     position: absolute;
@@ -356,6 +356,8 @@ text-align: end;
 
 }
 
+
+/*Tablet*/
 @media screen and (min-width:768px){
 .nav {
     display: flex;
