@@ -96,6 +96,12 @@ h1 {
     left: 50%;
     
 }
+
+/*Paragraph Styles*/
+p {
+    font-family: 'hahmlet', 'Courier New', Courier, monospace;
+    font-size: larger;
+}
 /* Slide Show Styling*/
 .bfa-container1 {
     background-color: aquamarine;
